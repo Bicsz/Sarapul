@@ -12,11 +12,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div id="container">
 	<h1>CRM</h1>
-
-	
     
-
-	<a href="../exit_">Exit</a>
+	
+    <a href="/index.php/all_article/">объявления</a>
+    <br />
+     <a href="/index.php/all_work/">вакансии</a>
+    <br />
+     <a href="/index.php/all_message/">сообщения</a>
+<br /><br />
+	<a href="./exit_">Exit</a>
 </div>
 
 </body>

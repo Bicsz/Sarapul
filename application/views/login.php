@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <?php if(isset($signIn_error)) echo $signIn_error;?>
     <?php echo validation_errors(); ?>
 
-    <?php echo form_open('login/user_login_process') ?>
+    <?php echo form_open('../login/user_login_process') ?>
 
         <label for="title">login</label>
         <input type="input" name="login" /><br />

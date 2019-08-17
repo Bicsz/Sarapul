@@ -56,3 +56,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['login'] = 'Login/index';
 $route['exit_'] = 'Crm/exit_';
 
+

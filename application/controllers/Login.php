@@ -46,7 +46,7 @@ Class Login extends CI_Controller {
            $this->load->view('login');
         } else {
             $data = array(
-            'login' => $this->input->post('login'),
+                'login' => $this->input->post('login'),
             'password' => $this->input->post('password')
             );
             $result = $this->accaunt_model->Check($data);
@@ -63,7 +63,8 @@ Class Login extends CI_Controller {
                     );
                     // Add user data in session
                     $this->session->set_userdata('logged_in', $session_data);
-                    $this->load->view('crm');
+               redirect ('../crm');
+                    //$this->load->view('crm');
                 
             } else {
                 $data = array(

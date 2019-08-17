@@ -10,15 +10,23 @@ class Crm extends CI_Controller {
         if(isset($this->session->userdata['logged_in'])){
                 $this->load->view('crm');
             }else{
-                $this->load->view('login');
+                redirect('../login');
             }
 	}
     
     public function exit_()
 	{
         session_destroy();
-        $this->load->view('login');
+        redirect('../login');
 	}
+    
+    public function create()
+	{
+        echo "cr";
+        $this->load->view('crm');
+	}
+    
+    
     
     public function __construct()
         {
