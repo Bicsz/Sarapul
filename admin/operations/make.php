@@ -79,14 +79,15 @@ function SelectSome(){
     
     $array=array();
     
-    $sql = 'select * from '.$table.' where ';
+    $sql = 'select * from '.$table;
     
     
         $ferst=true;
         foreach ($_GET as $key => $value) {
-            if($ferst)
+            if($ferst){
                 $ferst=false;
-            else{
+                $sql=$sql." where ";    
+            }else{
                $sql=$sql.' and ';
 
             }

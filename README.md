@@ -13,6 +13,12 @@ http://sarapul.ru/admin/operations/make.php?operation=SelectSome&table=(назв
 
 http://sarapul.ru/admin/operations/make.php?operation=SelectSome&table=(название таблицы без скобок)&id=1&date=curdate    - вернет запись с id=1 и date=текущей дате
 
+Пример:
+http://sarapul.ru/admin/operations/make.php?operation=SelectSome&table=articles&harakter=2
+- получение записей из articles где harakter=2
+
+
+
 
 создание чего либо (запись тоже можно но без фоток)
 http://sarapul.ru/admin/operations/make.php?operation=CreateUpdateSome&table=(название таблицы без скобок)&(название поля в таблице  без скобок)=(значение поля в таблице без скобок)
