@@ -11,6 +11,14 @@ function ADMIN(){ //давать данный параметр тем функц
 
 }
 
+function CheckSession(){
+    if(isset($_SESSION["id"]) && isset($_SESSION["login"]) && isset($_SESSION["password"])){
+        echo '{"id":'.$_SESSION["id"].',"login":'.$_SESSION["login"].',"password":'.$_SESSION["password"].'}';
+    }
+    else
+        echo '{"result":"null session"}';
+}
+
 function SUPER_ERROR(){
      session_unset();
      session_destroy();
@@ -195,6 +203,7 @@ function DeleteSome(){
    
      echo '{"result":"ok"}';   
 }
+
 
 
 function CreateUpdateSome(){
